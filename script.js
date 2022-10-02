@@ -18,7 +18,7 @@ function voices(){
     }
 }
 
-synth.addEventListener("voiceschanged");
+synth.addEventListener("voiceschanged",voices);
 
 function textToSpeech(text){
     let utternance = new SpeechSynthesisUtterance(text);
